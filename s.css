@@ -1,5 +1,5 @@
 :root {
-    --dark-mode: blue;  --dark-mode-c: white;
+    --a: #0e1117;     --b: #161b22;     --c: #e4e4e4; 
   }
 
 *{
@@ -7,25 +7,30 @@
 }
 
 body{
-    background-color: var(--dark-mode);
+    background-color: var(--b);
 }
-h1{
-    color: var(--dark-mode-c);
+h1, h3{
+    color: var(--c);
 }
 .frag{
     background-color: transparent;
     display: block;
     height: 30px;
+    margin-top: 30px;
 }
 .textarea{
+    background-color: var(--a);
+    color: var(--c);
     overflow:hidden;
     resize: none;
     float:left;
-    width: 85%;
-    height: calc(100% + 3px);
+    width: calc(100% - 40px);
+    height: calc(100%);
+    overflow-x: scroll;
+    white-space: pre;
 }
-.button{
-    float: left;
-    width: 10%;
+.btn{
+    background: var(--c);
+    border: 1px;
     height: 100%;
 }
